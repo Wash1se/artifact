@@ -1,0 +1,372 @@
+.terms-page {
+  position: relative;
+  min-height: 100vh;
+  background: var(--paper);
+  color: var(--ink);
+}
+
+.terms-header {
+  display: flex;
+  width: min(100% - 36px, 1180px);
+  margin: 0 auto;
+  padding: clamp(22px, 3vw, 42px) 0 clamp(36px, 6vw, 88px);
+  align-items: center;
+  justify-content: space-between;
+}
+
+.terms-logo {
+  display: inline-flex;
+  width: clamp(82px, 8vw, 118px);
+}
+
+.terms-logo img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.terms-back {
+  display: grid;
+  width: clamp(46px, 4.5vw, 58px);
+  height: clamp(46px, 4.5vw, 58px);
+  border: 1px solid rgba(16, 16, 15, 0.28);
+  border-radius: 50%;
+  color: var(--ink);
+  place-items: center;
+  text-decoration: none;
+  transition:
+    background-color 220ms ease,
+    border-color 220ms ease,
+    transform 220ms ease;
+}
+
+.terms-back:hover,
+.terms-back:focus-visible {
+  border-color: rgba(16, 16, 15, 0.58);
+  background: rgba(16, 16, 15, 0.05);
+  outline: none;
+  transform: translateX(-2px);
+}
+
+.terms-back svg {
+  width: 24px;
+  height: 24px;
+  fill: none;
+  stroke: currentColor;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-width: 1.8;
+}
+
+.terms-document {
+  width: min(100% - 36px, 920px);
+  margin: 0 auto;
+  padding-bottom: clamp(64px, 8vw, 120px);
+}
+
+.terms-document h1,
+.terms-document h2,
+.terms-document h3,
+.terms-document p {
+  margin: 0;
+}
+
+.terms-document h1 {
+  max-width: 15ch;
+  font-family: "Cormorant Garamond", Georgia, serif;
+  font-size: clamp(2.7rem, 5.2vw, 5rem);
+  font-weight: 600;
+  line-height: 0.94;
+  letter-spacing: 0;
+  text-wrap: balance;
+  text-transform: uppercase;
+}
+
+.terms-title-line {
+  display: inline;
+}
+
+.terms-intro,
+.terms-section {
+  display: grid;
+  gap: 18px;
+}
+
+.terms-intro {
+  margin-top: clamp(28px, 4vw, 54px);
+}
+
+.terms-section {
+  margin-top: clamp(46px, 6vw, 78px);
+}
+
+.terms-document h2 {
+  padding-top: clamp(24px, 3vw, 38px);
+  border-top: 1px solid rgba(16, 16, 15, 0.2);
+  font-family: "Cormorant Garamond", Georgia, serif;
+  font-size: clamp(1.8rem, 3vw, 3.1rem);
+  font-weight: 500;
+  line-height: 1;
+  letter-spacing: 0.01em;
+}
+
+.terms-document h3 {
+  margin-top: 12px;
+  font-size: clamp(1.05rem, 1.4vw, 1.28rem);
+  font-weight: 600;
+  line-height: 1.35;
+}
+
+.terms-document p {
+  max-width: 76ch;
+  color: rgba(16, 16, 15, 0.76);
+  font-size: clamp(1rem, 1.18vw, 1.15rem);
+  line-height: 1.72;
+}
+
+@media (min-width: 701px) {
+  .terms-header {
+    position: absolute;
+    top: 18px;
+    left: 22px;
+    right: 22px;
+    z-index: 2;
+    width: auto;
+    margin: 0;
+    padding: 0;
+    flex-direction: row-reverse;
+    align-items: flex-start;
+    gap: 0;
+    justify-content: space-between;
+  }
+
+  .terms-logo {
+    width: 136px;
+  }
+
+  .terms-back {
+    width: 64px;
+    height: 64px;
+    margin-left: 0;
+  }
+
+  .terms-document {
+    width: min(100% - 88px, 1660px);
+    padding-top: 124px;
+  }
+
+  .terms-document h1 {
+    max-width: none;
+    font-size: clamp(2rem, 2.9vw, 3.35rem);
+    line-height: 0.96;
+    text-align: center;
+    white-space: nowrap;
+  }
+
+  .terms-title-line {
+    display: inline;
+  }
+
+  .terms-intro,
+  .terms-section {
+    width: min(100%, 1260px);
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .terms-intro {
+    margin-top: 54px;
+  }
+
+  .terms-document h2 {
+    font-size: clamp(1.75rem, 2.2vw, 2.65rem);
+  }
+
+  .terms-document h2,
+  .terms-document h3,
+  .terms-document p {
+    max-width: none;
+    text-wrap: pretty;
+  }
+}
+
+@media (max-width: 700px) {
+  .terms-header {
+    position: absolute;
+    top: 14px;
+    left: 14px;
+    right: 14px;
+    z-index: 2;
+    width: auto;
+    margin: 0;
+    padding: 0;
+    flex-direction: row-reverse;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+
+  .terms-logo {
+    width: 112px;
+  }
+
+  .terms-back {
+    width: 48px;
+    height: 48px;
+  }
+
+  .terms-document {
+    width: calc(100% - 48px);
+    padding-top: 118px;
+    padding-bottom: 72px;
+  }
+
+  .terms-document h1 {
+    max-width: none;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: clamp(1.62rem, 6.7vw, 2rem);
+    font-weight: 700;
+    line-height: 1;
+    letter-spacing: -0.01em;
+    text-align: center;
+    white-space: normal;
+  }
+
+  .terms-title-line {
+    display: block;
+  }
+
+  .terms-intro,
+  .terms-section {
+    width: min(100%, 100%);
+    gap: 15px;
+  }
+
+  .terms-intro {
+    margin-top: 34px;
+  }
+
+  .terms-document h2 {
+    font-size: clamp(1.5rem, 6.1vw, 1.95rem);
+    font-weight: 600;
+    line-height: 1.08;
+  }
+
+  .terms-document h3 {
+    font-size: 1.03rem;
+  }
+
+  .terms-document p {
+    font-size: 0.98rem;
+    line-height: 1.62;
+  }
+}
+
+.contract-document {
+  width: min(100% - 48px, 1120px);
+}
+
+.contract-hero {
+  display: grid;
+  margin-bottom: 42px;
+  text-align: center;
+}
+
+.contract-document h1 {
+  max-width: none;
+  font-size: 2.55rem;
+  font-weight: 600;
+  line-height: 0.96;
+  letter-spacing: 0;
+  text-align: center;
+  text-transform: none;
+  white-space: normal;
+}
+
+.contract-title-line {
+  display: inline;
+}
+
+.contract-section p {
+  max-width: none;
+}
+
+.contract-section {
+  display: grid;
+  width: min(100%, 1040px);
+  margin: 0 auto;
+  padding-top: 24px;
+  border-top: 1px solid rgba(16, 16, 15, 0.16);
+  gap: 10px;
+}
+
+.contract-section + .contract-section {
+  margin-top: 32px;
+}
+
+.contract-section h2 {
+  padding-top: 0;
+  border-top: 0;
+  font-size: 1.7rem;
+  font-weight: 600;
+  line-height: 1.08;
+  letter-spacing: 0;
+}
+
+.contract-section p {
+  color: rgba(16, 16, 15, 0.78);
+  font-size: 0.92rem;
+  line-height: 1.66;
+}
+
+@media (min-width: 701px) {
+  .contract-document {
+    width: min(100% - 112px, 1280px);
+  }
+
+  .contract-document h1 {
+    font-size: 2.65rem;
+    white-space: nowrap;
+  }
+}
+
+@media (max-width: 700px) {
+  .contract-document {
+    width: calc(100% - 48px);
+    padding-top: 124px;
+  }
+
+  .contract-hero {
+    margin-bottom: 36px;
+  }
+
+  .contract-document h1 {
+    font-size: 1.42rem;
+    font-weight: 600;
+    line-height: 1.04;
+    letter-spacing: 0;
+  }
+
+  .contract-title-line {
+    display: block;
+  }
+
+  .contract-section {
+    gap: 9px;
+    padding-top: 22px;
+  }
+
+  .contract-section + .contract-section {
+    margin-top: 28px;
+  }
+
+  .contract-section h2 {
+    font-size: 1.32rem;
+    line-height: 1.12;
+  }
+
+  .contract-section p {
+    font-size: 0.86rem;
+    line-height: 1.58;
+  }
+}

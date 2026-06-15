@@ -1,0 +1,37 @@
+@import "tailwindcss";
+
+:root {
+  --ink: #10100f;
+  --paper: #f5f5f2;
+  --transition: 700ms;
+  --mobile-type-section-title: clamp(2.15rem, 9.5vw, 2.9rem);
+  --mobile-type-eyebrow: 0.72rem;
+  --mobile-type-lead: 0.88rem;
+  --mobile-type-support: 0.8rem;
+  --mobile-leading-title: 0.9;
+  --mobile-leading-copy: 1.48;
+  --mobile-tracking-eyebrow: 0.15em;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  min-height: 100%;
+  margin: 0;
+  background: var(--paper);
+}
+
+body {
+  overflow-x: hidden;
+  color: var(--ink);
+  font-family: "Manrope", "Helvetica Neue", Helvetica, sans-serif;
+}
+
+button,
+a {
+  -webkit-tap-highlight-color: transparent;
+}

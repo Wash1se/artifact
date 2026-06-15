@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#f5f5f2" />
+    <meta name="description" content="ARTIFACT — AI models agency." />
+    <title>ARTIFACT — AI models agency</title>
+    <link rel="icon" href="./assets/brand/artifact-logo.svg" type="image/svg+xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Manrope:wght@400;500&display=swap"
+    />
+    <link rel="stylesheet" href="./assets/styles/global.css" />
+    <link rel="stylesheet" href="./components/hero/hero.css" />
+    <link rel="stylesheet" href="./components/shared/site-nav.css" />
+    <link rel="stylesheet" href="./components/sections/services/services.css" />
+    <link rel="stylesheet" href="./components/sections/benefits/benefits.css" />
+    <link rel="stylesheet" href="./components/sections/locations/locations.css" />
+    <link rel="stylesheet" href="./components/sections/portfolio/portfolio.css" />
+    <link rel="stylesheet" href="./components/sections/pricing/pricing.css" />
+    <link rel="stylesheet" href="./components/sections/contacts/contacts.css" />
+    <script type="module" src="./assets/js/reset-scroll.js"></script>
+    <script type="module" src="./assets/js/hero-scroll.js"></script>
+    <script type="module" src="./assets/js/mobile-menu.js"></script>
+    <script type="module" src="./assets/js/app.js"></script>
+    <script type="module" src="./assets/js/background-preload.js"></script>
+    <script type="module" src="./components/sections/services/services.tsx"></script>
+    <script type="module" src="./components/sections/benefits/benefits.tsx"></script>
+    <script type="module" src="./components/sections/locations/locations.tsx"></script>
+    <script type="module" src="./components/sections/portfolio/portfolio.tsx"></script>
+    <script type="module" src="./components/sections/pricing/pricing-section.tsx"></script>
+    <script type="module" src="./components/sections/contacts/contacts.tsx"></script>
+  </head>
+  <body>
+    <main class="hero" aria-label="Главная галерея ARTIFACT">
+      <div class="hero-stage">
+        <div class="slides" aria-live="off"></div>
+
+        <section class="hero-copy" aria-label="Главный текст ARTIFACT">
+          <div class="hero-copy__inner">
+            <h1 class="hero-copy__title">ARTIFACT</h1>
+            <p class="hero-copy__subtitle">AI Будущее модельного бизнеса</p>
+          </div>
+        </section>
+
+        <header class="site-header">
+          <a class="logo logo--corner" href="./index.html" aria-label="ARTIFACT — перезагрузить главную страницу">
+            <img src="./assets/brand/artifact-logo.svg" alt="ARTIFACT AI models agency" />
+          </a>
+        </header>
+
+        <nav class="site-nav" aria-label="Основные разделы">
+          <a href="#services">Услуги</a>
+          <a href="#portfolio">Портфолио</a>
+          <a href="#packages">Цены</a>
+          <a href="#contacts">Контакты</a>
+          <a href="./terms.html">Условия</a>
+          <a href="./contract.html">Договор</a>
+        </nav>
+
+        <nav class="slider-controls" aria-label="Навигация по фотографиям">
+          <button class="arrow arrow--previous" type="button" aria-label="Предыдущая фотография">
+            <svg aria-hidden="true" viewBox="0 0 24 24">
+              <path d="m15 4-8 8 8 8" />
+            </svg>
+          </button>
+
+          <button class="arrow arrow--next" type="button" aria-label="Следующая фотография">
+            <svg aria-hidden="true" viewBox="0 0 24 24">
+              <path d="m9 4 8 8-8 8" />
+            </svg>
+          </button>
+        </nav>
+
+        <div class="scroll-cue" aria-hidden="true">
+          <svg class="scroll-cue__arrow" viewBox="0 0 18 28">
+            <path d="M9 1v24m-6-6 6 6 6-6" />
+          </svg>
+        </div>
+
+        <div class="progress" aria-hidden="true">
+          <span class="progress__bar"></span>
+        </div>
+      </div>
+    </main>
+
+    <button
+      class="mobile-menu-toggle"
+      type="button"
+      aria-controls="mobile-menu"
+      aria-expanded="false"
+    >
+      <span>Меню</span>
+      <span class="mobile-menu-toggle__icon" aria-hidden="true">
+        <i></i>
+        <i></i>
+      </span>
+    </button>
+
+    <div class="mobile-menu" id="mobile-menu" aria-hidden="true">
+      <div class="mobile-menu__top">
+        <img src="./assets/brand/artifact-logo.svg" alt="" aria-hidden="true" />
+        <button class="mobile-menu__close" type="button" aria-label="Закрыть меню">
+          <i></i>
+          <i></i>
+        </button>
+      </div>
+      <nav class="mobile-menu__links" aria-label="Мобильные разделы">
+        <a href="#services"><span>1</span>Услуги</a>
+        <a href="#portfolio"><span>2</span>Портфолио</a>
+        <a href="#packages"><span>3</span>Цены</a>
+        <a href="#contacts"><span>4</span>Контакты</a>
+        <a href="./terms.html"><span>5</span>Условия</a>
+        <a href="./contract.html"><span>6</span>Договор</a>
+      </nav>
+      <p class="mobile-menu__caption">ARTIFACT · AI models agency</p>
+    </div>
+
+    <section id="block-2-root" aria-label="О профессиональном AI-продакшне"></section>
+    <section id="block-benefits-root" aria-label="Преимущества AI-продакшна"></section>
+    <section id="block-3-root" aria-label="Выбор локации для съемки"></section>
+    <section id="block-4-root" aria-label="Портфолио моделей ARTIFACT"></section>
+    <section id="block-5-root" aria-label="Пакеты и цены ARTIFACT"></section>
+    <section id="block-6-root" aria-label="Контакты ARTIFACT"></section>
+  </body>
+</html>
